@@ -65,7 +65,7 @@
     "jquery-ujs": "^1.2.0",
     "loader-utils": "^0.2.12",
     "lodash": "^4.6.1",
-    "node-sass": "^3.4.2",
+    "node-sass": "^4.13.1",
     "node-uuid": "^1.4.7",
     "object.omit": "^2.0.0",
     "postcss-loader": "^0.9.1",
