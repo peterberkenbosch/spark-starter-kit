@@ -61,7 +61,7 @@
     "history": "^2.0.0",
     "imports-loader": "^0.6.5",
     "isomorphic-fetch": "^2.2.1",
-    "jquery": "^2.2.0",
+    "jquery": "^3.5.0",
     "jquery-ujs": "^1.2.0",
     "loader-utils": "^0.2.12",
     "lodash": "^4.6.1",
