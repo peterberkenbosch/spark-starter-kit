@@ -34,7 +34,9 @@
     "build:test:client": "webpack -w --config webpack.client.rails.build.config.js",
     "lint": "npm run eslint && npm run jscs",
     "eslint": "eslint --ext .js,.jsx .",
-    "jscs": "jscs --verbose ."
+    "jscs": "jscs --verbose .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "autoprefixer": "^6.3.3",
@@ -61,7 +63,7 @@
     "history": "^2.0.0",
     "imports-loader": "^0.6.5",
     "isomorphic-fetch": "^2.2.1",
-    "jquery": "^2.2.0",
+    "jquery": "^3.5.0",
     "jquery-ujs": "^1.2.0",
     "loader-utils": "^0.2.12",
     "lodash": "^4.6.1",
@@ -84,7 +86,8 @@
     "sass-resources-loader": "1.0.2",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.13",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-eslint": "5.0.0",
@@ -108,5 +111,6 @@
     "should": "^8.2.2",
     "sleep": "^3.0.1",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
