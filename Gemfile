@@ -3,15 +3,15 @@ source 'https://rubygems.org'
 ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
@@ -31,7 +31,7 @@ group :development, :test do
   gem 'pry-remote'
   gem 'pry-stack_explorer'
   gem 'pry-nav'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.1.1'
   gem 'binding_of_caller'
   gem 'awesome_print'
 
@@ -39,25 +39,25 @@ group :development, :test do
   gem 'spring'
 
   # testing
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.1'
   gem 'rspec-activemodel-mocks'
   gem 'rspec-activejob'
   gem 'spring-commands-rspec'
   gem 'shoulda-matchers', require: false
   gem 'factory_girl'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.7.0'
   gem 'database_cleaner'
   gem 'ffaker'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'bullet'
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
-gem 'web-console', '~> 3.0', group: :development
+gem 'web-console', '~> 3.3', '>= 3.3.0', group: :development
 
 group :test do
-  gem 'capybara'
-  gem 'capybara-screenshot'
+  gem 'capybara', '>= 2.7.1'
+  gem 'capybara-screenshot', '>= 1.0.13'
   gem 'launchy'
   gem 'vcr'
   gem 'webmock'
@@ -79,7 +79,7 @@ gem 'fog-aws'
 
 # caching
 gem 'dalli' # memcache
-gem 'rack-cache' # http caching
+gem 'rack-cache' , '>= 1.6.1' # http caching
 gem 'kgio' # faster kgio IO system
 
 # rollbar
@@ -89,16 +89,16 @@ gem 'rollbar'
 gem 'newrelic_rpm'
 
 # sidekiq
-gem 'sidekiq'
-gem 'sinatra', require: nil
+gem 'sidekiq', '>= 4.1.4'
+gem 'sinatra', '>= 2.0.0', require: nil
 
 # front end
 gem 'haml'
-gem 'react-rails'
-gem 'js-routes'
+gem 'react-rails', '>= 1.8.0'
+gem 'js-routes', '>= 1.2.6'
 gem 'i18n-js', '>= 3.0.0.rc11'
 
 # Spree gems
-gem 'spree', '~> 3.1.0'
-gem 'spree_gateway', '~> 3.1.0'
-gem 'spree_auth_devise', '~> 3.1.0'
+gem 'spree', '~> 3.2.0'
+gem 'spree_gateway', '~> 3.2.0'
+gem 'spree_auth_devise', '~> 3.2.0'
