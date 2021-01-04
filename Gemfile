@@ -7,11 +7,11 @@ gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
@@ -39,25 +39,25 @@ group :development, :test do
   gem 'spring'
 
   # testing
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.1'
   gem 'rspec-activemodel-mocks'
   gem 'rspec-activejob'
   gem 'spring-commands-rspec'
   gem 'shoulda-matchers', require: false
   gem 'factory_girl'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.7.0'
   gem 'database_cleaner'
   gem 'ffaker'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
   gem 'bullet'
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
-gem 'web-console', '~> 3.0', group: :development
+gem 'web-console', '~> 3.3', '>= 3.3.0', group: :development
 
 group :test do
-  gem 'capybara'
-  gem 'capybara-screenshot'
+  gem 'capybara', '>= 2.7.1'
+  gem 'capybara-screenshot', '>= 1.0.13'
   gem 'launchy'
   gem 'vcr'
   gem 'webmock'
@@ -74,8 +74,8 @@ end
 
 # file uploades & assets
 gem 'paperclip' # Image Rescaling for aws
-gem 'aws-sdk', '< 2.0'
-gem 'fog-aws'
+gem 'aws-sdk', '>= 1.66.0', '< 2.0'
+gem 'fog-aws', '>= 0.9.4'
 
 # caching
 gem 'dalli' # memcache
@@ -94,11 +94,11 @@ gem 'sinatra', require: nil
 
 # front end
 gem 'haml'
-gem 'react-rails'
-gem 'js-routes'
+gem 'react-rails', '>= 1.8.0'
+gem 'js-routes', '>= 1.2.6'
 gem 'i18n-js', '>= 3.0.0.rc11'
 
 # Spree gems
-gem 'spree', '~> 3.1.0'
+gem 'spree', '~> 3.1.7'
 gem 'spree_gateway', '~> 3.1.0'
 gem 'spree_auth_devise', '~> 3.1.0'
